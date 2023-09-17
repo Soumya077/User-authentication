@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div class="main overlay">
+        <div class="img-div">
+            <div class="welcome-div">
+                <h2>Welcome to</h2>
+                <h1>TreeSense Imaging</h1>
+                <p>Step into the world of trees with us.Together, we can make a meaningful impact on our environment and connect with a community of fellow nature enthusiasts.</p>
+                <p>Come, be a part of our green community today!</p>
+            </div>
+        </div>
+        <div class="login-div">
+            <div class="hero">
+                <div class="form-box">
+                    <div class="btn-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="signUp()">Sign In</button>
+                        <button type="button" class="toggle-btn" onclick="signIn()">Sign Up</button>
+                    </div>
+                    <!-- sign in  -->
+                    <div class="box" id="signIn">
+                        <div class="social-div">
+                            <span>Sign in using </span>
+                            <a href="http://"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                        <div class="or-div">
+                            <img src="or1.png" alt="">
+                        </div>
+                        <form  class="input-group">
+                            <input type="text" class="input-field" name="userId" id="userId" placeholder="User Id / Email Id" required>
+                            <input type="text" class="input-field" name="password" id="password" placeholder="Enter password" required>
+                            <button type="submit" class="submit-btn">Sign In</button>
+                        </form>
+                    </div>
+                    <!-- sign up  -->
+                    <div class="box" id="signUp">
+                        <div class="social-div" >
+                            <span>Sign up using </span>
+                            <a href="http://"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                        <div class="or-div">
+                            <img src="or1.png" alt="">
+                        </div>
+                        <form  class="input-group">
+                            <input type="text" class="input-field" name="userId" id="userId" placeholder="User Id / Email Id" required>
+                            <input type="email" name="email" id="email" class="input-field" placeholder="Email Id">
+                            <input type="text" class="input-field" name="password" id="password" placeholder="Enter password" required>
+                            <button type="submit" class="submit-btn">Create an account </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
